@@ -1,0 +1,46 @@
+Description of everything I did at adobe so that I can input it into chatGPT
+
+I'd like you to write a couple bullet points given the work I did at a company
+for a resume:
+
+My project was essentially creating a real time model management system for
+parameter efficient fine tuning models. What that specifically means is that I
+created a system where models can be efficient stored and loaded efficiently
+with an easy to use API.
+
+To do that I did the following: 
+
+I created an asynchronous python webserver using fastapi. this webserver accepts
+requests using a train endpoint. It then creates an asynchronous job and returns
+the job status to the user, the user can ping the system constantly to be
+updated about the status of the job. the job information is stored in postgres
+SQL. This web server is also scalable to have multiple workers using gunicorn.
+
+the user can then upload code that the webserver will import and use that that
+train api to train their models, and upload fine tune layers to a system called
+mms, or model management system. To save their model, they can use a python
+library that I created called mms-sdk.
+
+mms-sdk does the following. It has 4 functions, 2 to save models, and 2 to load
+models. you can essentially upload the fine tune layers of your models to this
+SDK, either as bytes or as a folder. The code will compress the files in the
+folder, and then store information about where it is stored in postgres sql. The
+actual binary is stored in azure blob storage. It is also stored in the file
+system and a shared memory cache.
+
+I also made it such that this code can easily be started up using
+docker-compose. I created the docker and docker-compose files to do this.  In
+addition, I deployed this code using kubernetes. I have a redis cache that helps
+efficiently retrieve the files instead of storing them in azure blob storage
+every time.
+
+I also benchmarked various caching strategies to retrieve files and benchmarked
+how they perform given various file sizes and concurrent accesses in redis and
+the file system, and graphed the results using matplotlib.
+
+I also created documentation for this system, created miro digrams to
+communicate the various workflows that the code went through, including workflow
+diagrams for the state of the code and errors that it can encounter
+
+Feel free to ask me questions to clarify:
+

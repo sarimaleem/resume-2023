@@ -136,7 +136,18 @@
       {Software Development Intern}{May 2023 -- Aug 2023}
       {Adobe}{San Jose, CA}
       \resumeItemListStart
-        \resumeItem{TODO}
+        \resumeItem{TODO: Make this not garbage}
+        \resumeItem{Developed a real-time model management system (MMS) for efficient parameter fine-tuning of machine learning models, improving storage and load efficiency.}
+        \resumeItem{Implemented an asynchronous Python web server using FastAPI to accept, process, and update the status of training jobs, enhancing system responsiveness and user experience.}
+        \resumeItem{Integrated the server with PostgreSQL to store job information, and employed Gunicorn for scalable multi-worker support.}
+        \resumeItem{Designed a system allowing users to upload custom code for training their models and storing fine-tuned layers into the MMS.}
+        \resumeItem{Created a Python library, mms-sdk, providing four primary functions for uploading and retrieving model layers either as binary data or from a folder.}
+        \resumeItem{Utilized Azure Blob Storage for binary storage, alongside file system and shared memory cache for efficient data handling and retrieval.}
+        \resumeItem{Introduced Docker and Docker-compose for ease of startup and ensured system deployment using Kubernetes.}
+        \resumeItem{Leveraged Redis cache for efficient file retrieval, reducing dependency on Azure Blob Storage and enhancing system performance.}
+        \resumeItem{Benchmarked various caching strategies to optimize data retrieval performance given diverse file sizes and concurrent access in Redis and the file system, presenting the results via Matplotlib.}
+        \resumeItem{Authored comprehensive documentation for the MMS and mms-sdk, aiding in system understanding and usage.}
+        \resumeItem{Constructed Miro diagrams to illustrate code workflows, state changes, and error handling scenarios, facilitating team communication and code comprehension.}
       \resumeItemListEnd
       
 % -----------Multiple Positions Heading-----------
@@ -189,27 +200,31 @@
       \resumeProjectHeading
           {\textbf{Ray tracer} $|$ \emph{C++}}{}
           \resumeItemListStart
-            \resumeItem{TODO}
+            \resumeItem{}
           \resumeItemListEnd
       \resumeProjectHeading
           {\textbf{Neural Network Transformer} $|$ \emph{Python, PyTorch}}{}
           \resumeItemListStart
-            \resumeItem{TODO}
+            \resumeItem{Implemented transfomer encoder from scratch using pytorch}
+            \resumeItem{Measured performance of transformer by creating perplexity}
           \resumeItemListEnd
       \resumeProjectHeading
           {\textbf{Distributed Key-Value Store with Load Balancing} $|$ \emph{Java, Distributed Systems}}{}
           \resumeItemListStart
-            \resumeItem{TODO}
+            \resumeItem{Created linearizable key value store with replicates data with fault tolerance using paxos}
+            \resumeItem{Load balanced key/value workloads using sharded paxos replica groups}
           \resumeItemListEnd
       \resumeProjectHeading
           {\textbf{PintOS Operating System} $|$ \emph{C, Concurrency, Operating Systems}}{}
           \resumeItemListStart
-            \resumeItem{TODO}
+            \resumeItem{Implemented operating system with thread priority scheduling, system calls, virtual memory, and an EXT file system}
+            \resumeItem{Debugged race conditions, deadlocks, memory errors, and other bugs using GDB}
           \resumeItemListEnd
       \resumeProjectHeading
           {\textbf{Multiplayer Gomoku with AI} $|$ \emph{Javascript, Express, Web Sockets}}{}
           \resumeItemListStart
-            \resumeItem{TODO}
+            \resumeItem{Created a multiplayer website with communication through websockets}
+            \resumeItem{Implemented single player mode with AI using minimax with alpha beta pruning}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
 
@@ -220,19 +235,19 @@
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: Java, Python, C/C++, SQL (Postgres), JavaScript, HTML/CSS, R} \\
-     \textbf{Frameworks}{: React, Node.js, Flask, JUnit, WordPress, Material-UI, FastAPI} \\
-     \textbf{Developer Tools}{: Git, Docker, TravisCI, Google Cloud Platform, VS Code, Visual Studio, PyCharm, IntelliJ, Eclipse} \\
-     \textbf{Libraries}{: pandas, NumPy, Matplotlib}
+     \textbf{Languages}{: Java, Typescript/Javascript, C, C++, Python, Bash, SQL, HTML/CSS} \\
+     \textbf{Technology}{: MongoDB, Postgres, Docker, Kubernetes, Spring} \\
+     \textbf{Libraries}{: SQLAlchemy, Numpy, PyTorch}
+     \textbf{}{: } \\
     }}
  \end{itemize}
 
 \section{Activities}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Texas Wrestling}{: TODO} \\
-     \textbf{Central Texas Model UN}{: TODO} \\
-     \textbf{Advancing UT Technology}{: TODO} \\
+     \textbf{Texas Wrestling}{: Competed in wrestling tournaments} \\
+     \textbf{Central Texas Model UN}{: Helped organize Model UN conference for high schoolers} \\
+     \textbf{Advancing UT Technology}{: Team leader for social media website to connect UT students} \\
     }}
  \end{itemize}
 
