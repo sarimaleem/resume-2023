@@ -136,25 +136,19 @@
       {Software Development Intern}{May 2023 -- Aug 2023}
       {Adobe}{San Jose, CA}
       \resumeItemListStart
-        \resumeItem{TODO: Make this not garbage}
-        \resumeItem{Developed a real-time model management system (MMS) for efficient parameter fine-tuning of machine learning models, improving storage and load efficiency.}
-        \resumeItem{Implemented an asynchronous Python web server using FastAPI to accept, process, and update the status of training jobs, enhancing system responsiveness and user experience.}
-        \resumeItem{Integrated the server with PostgreSQL to store job information, and employed Gunicorn for scalable multi-worker support.}
-        \resumeItem{Designed a system allowing users to upload custom code for training their models and storing fine-tuned layers into the MMS.}
-        \resumeItem{Created a Python library, mms-sdk, providing four primary functions for uploading and retrieving model layers either as binary data or from a folder.}
-        \resumeItem{Utilized Azure Blob Storage for binary storage, alongside file system and shared memory cache for efficient data handling and retrieval.}
-        \resumeItem{Introduced Docker and Docker-compose for ease of startup and ensured system deployment using Kubernetes.}
-        \resumeItem{Leveraged Redis cache for efficient file retrieval, reducing dependency on Azure Blob Storage and enhancing system performance.}
-        \resumeItem{Benchmarked various caching strategies to optimize data retrieval performance given diverse file sizes and concurrent access in Redis and the file system, presenting the results via Matplotlib.}
-        \resumeItem{Authored comprehensive documentation for the MMS and mms-sdk, aiding in system understanding and usage.}
-        \resumeItem{Constructed Miro diagrams to illustrate code workflows, state changes, and error handling scenarios, facilitating team communication and code comprehension.}
+        \resumeItem{Developed real-time model management system for parameter efficient fine-tuning models}
+        \resumeItem{Coded asynchronous FastAPI webserver to accept train and predict requests}
+        \resumeItem{Integrated PostgreSQL to store fine-tune metadata and Azure blob storage to store binary}
+        \resumeItem{Benchmarked and graphed various caching strategies for efficient storage and retrieval of fine-tune layers including: Redis, Azure, Shared Memory Buffer}
+        \resumeItem{Containerized application using Docker deployed Kubernetes}
       \resumeItemListEnd
       
 % -----------Multiple Positions Heading-----------
 %    \resumeSubSubheading
 %     {Software Engineer I}{Oct 2014 - Sep 2016}
-%     \resumeItemListStart
-%        \resumeItem{Apache Beam}
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
 %          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
 %     \resumeItemListEnd
 %    \resumeSubHeadingListEnd
@@ -175,7 +169,7 @@
       {Teaching Assistant}{Aug 2022 -- Dec 2022}
       {University of Texas at Austin}{Austin, TX}
       \resumeItemListStart
-        \resumeItem{TODO}
+        \resumeItem{Taught students Python basics}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -195,12 +189,14 @@
       \resumeProjectHeading
           {\textbf{Fluid Simulator} $|$ \emph{C++, OpenGL}}{}
           \resumeItemListStart
-            \resumeItem{TODO}
+            \resumeItem{CPU implementation of 2D fluid simulator for incompressible fluids}
+            \resumeItem{Visualized velocity fields by creating real time vector field diagram}
           \resumeItemListEnd
       \resumeProjectHeading
-          {\textbf{Ray tracer} $|$ \emph{C++}}{}
+          {\textbf{Multithreaded Ray tracer} $|$ \emph{C++}}{}
           \resumeItemListStart
-            \resumeItem{}
+            \resumeItem{Implemented multithreaded raytracer in C++ that uses phong illumination model}
+            \resumeItem{Accelerated Ray tracer with K-d Trees}
           \resumeItemListEnd
       \resumeProjectHeading
           {\textbf{Neural Network Transformer} $|$ \emph{Python, PyTorch}}{}
@@ -238,7 +234,6 @@
      \textbf{Languages}{: Java, Typescript/Javascript, C, C++, Python, Bash, SQL, HTML/CSS} \\
      \textbf{Technology}{: MongoDB, Postgres, Docker, Kubernetes, Spring} \\
      \textbf{Libraries}{: SQLAlchemy, Numpy, PyTorch}
-     \textbf{}{: } \\
     }}
  \end{itemize}
 
