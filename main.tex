@@ -123,8 +123,12 @@
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {University of Texas at Austin}{Austin, TX}
-      {Bachelor of Science in Computer Science, Minor in Arabic}{Aug. 2020 -- Dec 2023}
+      {University of Texas at Austin}{Dec 2023}
+      {Bachelor of Science in Computer Science, Minor in Arabic}{GPA: 3.86/4.0}
+      \resumeItemListStart
+        \resumeItem{\textbf{Relevant Coursework}: Distributed Computing, Operating Systems, Computer Graphics, Natural Language Processing, Machine Learning, Computer Networks, Algorithms, Compilers, Computer Architecture}
+        \resumeItem{\textbf{Teaching Assistant}: Elements of Computers and Programming}
+      \resumeItemListEnd
   \resumeSubHeadingListEnd
 
 
@@ -133,48 +137,30 @@
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {Software Development Intern}{May 2023 -- Aug 2023}
-      {Adobe}{San Jose, CA}
+      {Adobe}{May 2023 -- Aug 2023}
+      {Software Engineer Intern}{San Jose, CA}
       \resumeItemListStart
-        \resumeItem{Developed real-time model management system for parameter efficient fine-tuning models}
-        \resumeItem{Coded asynchronous FastAPI webserver to accept train and predict requests}
-        \resumeItem{Integrated PostgreSQL to store fine-tune metadata and Azure blob storage to store binary}
-        \resumeItem{Benchmarked and graphed various caching strategies for efficient storage and retrieval of fine-tune layers including: Redis, Azure, Shared Memory Buffer}
-        \resumeItem{Containerized application using Docker deployed Kubernetes}
+        \resumeItem{Created a real time distributed ML pipeline to store and retrieve fine-tune layers for 15,000+ models}
+        \resumeItem{Developed a fastAPI webserver that asynchronously executes training and inference jobs}
+        \resumeItem{Integrated PostgreSQL to store metadata about asynchronous jobs and fine-tune layers}
+        \resumeItem{Benchmarked multiple caching strategies for efficient storage and retrieval of fine-tune layers, including: Redis, Azure Blob Storage, native file system, and interprocess shared memory buffer}
+        \resumeItem{Containerized application using Docker and deployed scalably with Kubernetes}
       \resumeItemListEnd
-      
-% -----------Multiple Positions Heading-----------
-%    \resumeSubSubheading
-%     {Software Engineer I}{Oct 2014 - Sep 2016}
-% -----------Multiple Positions Heading-----------
-%    \resumeSubSubheading
-%     {Software Engineer I}{Oct 2014 - Sep 2016}
-%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
-%     \resumeItemListEnd
-%    \resumeSubHeadingListEnd
-% -------------------------------------------
 
     \resumeSubheading
-      {Software Development Intern}{Jun 2022 -- Aug 2022}
-      {Fujitsu Network Communications}{Dallas, TX}
+      {Fujitsu Network Communications}{Jun 2022 -- Aug 2022}
+      {Software Engineer Intern}{Dallas, TX}
       \resumeItemListStart
         \resumeItem{Developed web client in Java Spring to migrate network element data to CPS database from MongoDB}
         \resumeItem{Created CPS database schema to store NETCONF/RESTCONF data in YANG}
         \resumeItem{Configured network bridge in Docker files to enable cross-communication between 15+ microservices}
         \resumeItem{Migrated southbound interface from direct drivers to a software defined network controller}
-        \resumeItem{Wrote bash scripts to automate container deployment and test REST endpoints}
+        \resumeItem{Wrote shell scripts to automate container deployment and test REST endpoints}
     \resumeItemListEnd
 
     \resumeSubheading
-      {Teaching Assistant}{Aug 2022 -- Dec 2022}
-      {University of Texas at Austin}{Austin, TX}
-      \resumeItemListStart
-        \resumeItem{Taught students Python basics}
-      \resumeItemListEnd
-
-    \resumeSubheading
-      {Research Intern}{Jan 2021 -- Aug 2021}
-      {Baylor College of Medicine}{Houston, TX}
+      {Baylor College of Medicine}{Jan 2021 -- Aug 2021}
+      {Research Intern}{Houston, TX}
       \resumeItemListStart
         \resumeItem{Built computer vision model in C++ to analyze mice pupil dilation size, 50x fasterthan deep learning model}
         \resumeItem{Programmed Tkinter GUI to edit audio files based on signal patterns and spectrogram}
@@ -189,38 +175,26 @@
       \resumeProjectHeading
           {\textbf{Fluid Simulator} $|$ \emph{C++, OpenGL}}{}
           \resumeItemListStart
-            \resumeItem{CPU implementation of 2D fluid simulator for incompressible fluids}
-            \resumeItem{Visualized velocity fields by creating real time vector field diagram}
-          \resumeItemListEnd
-      \resumeProjectHeading
-          {\textbf{Multithreaded Ray tracer} $|$ \emph{C++}}{}
-          \resumeItemListStart
-            \resumeItem{Implemented multithreaded raytracer in C++ that uses phong illumination model}
-            \resumeItem{Accelerated Ray tracer with K-d Trees}
-          \resumeItemListEnd
-      \resumeProjectHeading
-          {\textbf{Neural Network Transformer} $|$ \emph{Python, PyTorch}}{}
-          \resumeItemListStart
-            \resumeItem{Implemented transfomer encoder from scratch using pytorch}
-            \resumeItem{Measured performance of transformer by creating perplexity}
+            \resumeItem{Implementation of 2D fluid simulator for incompressible fluids by using simplified model of Navier-Stokes}
+            \resumeItem{Visualized velocity fields by creating real time vector field graph}
           \resumeItemListEnd
       \resumeProjectHeading
           {\textbf{Distributed Key-Value Store with Load Balancing} $|$ \emph{Java, Distributed Systems}}{}
           \resumeItemListStart
-            \resumeItem{Created linearizable key value store with replicates data with fault tolerance using paxos}
-            \resumeItem{Load balanced key/value workloads using sharded paxos replica groups}
+            \resumeItem{Created linearizable key value store that replicates data with fault tolerance using paxos}
+            \resumeItem{Load balanced key-value workloads using sharded paxos replica groups}
           \resumeItemListEnd
       \resumeProjectHeading
-          {\textbf{PintOS Operating System} $|$ \emph{C, Concurrency, Operating Systems}}{}
+          {\textbf{Multithreaded Ray Tracer} $|$ \emph{C++}}{}
           \resumeItemListStart
-            \resumeItem{Implemented operating system with thread priority scheduling, system calls, virtual memory, and an EXT file system}
-            \resumeItem{Debugged race conditions, deadlocks, memory errors, and other bugs using GDB}
+            \resumeItem{Implemented Whitted-style raytracer in C++}
+            \resumeItem{Accelerated Ray tracer with K-d Trees and multithreading}
           \resumeItemListEnd
       \resumeProjectHeading
-          {\textbf{Multiplayer Gomoku with AI} $|$ \emph{Javascript, Express, Web Sockets}}{}
+          {\textbf{Neural Network Transformer Encoder} $|$ \emph{Python, PyTorch}}{}
           \resumeItemListStart
-            \resumeItem{Created a multiplayer website with communication through websockets}
-            \resumeItem{Implemented single player mode with AI using minimax with alpha beta pruning}
+            \resumeItem{Implemented transfomer encoder from scratch using PyTorch}
+            \resumeItem{Measured entropy of transformer by using perplexity}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
 
@@ -232,8 +206,7 @@
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
      \textbf{Languages}{: Java, Typescript/Javascript, C, C++, Python, Bash, SQL, HTML/CSS} \\
-     \textbf{Technology}{: MongoDB, Postgres, Docker, Kubernetes, Spring} \\
-     \textbf{Libraries}{: SQLAlchemy, Numpy, PyTorch}
+     \textbf{Technology}{: MongoDB, PostgreSQL, Azure, Docker, Spring, Numpy, PyTorch} \\
     }}
  \end{itemize}
 
@@ -242,7 +215,6 @@
     \small{\item{
      \textbf{Texas Wrestling}{: Competed in wrestling tournaments} \\
      \textbf{Central Texas Model UN}{: Helped organize Model UN conference for high schoolers} \\
-     \textbf{Advancing UT Technology}{: Team leader for social media website to connect UT students} \\
     }}
  \end{itemize}
 
