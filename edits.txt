@@ -1,0 +1,24 @@
+I want you to bold the following stuff in my resume:
+
+in adobe section: 
+15000+ 
+FastApi 
+PostgresSQL
+Redis
+Docker, Kubernetes
+
+in fujitsu section:
+Java Spring
+15+
+Docker
+
+in baylor college of medicine section:
+C++
+50x
+
+personal projects:
+react, mongodb
+GPT
+paxos
+fine-tuned
+c++, opengl

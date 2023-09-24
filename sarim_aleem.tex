@@ -126,7 +126,7 @@
       {University of Texas at Austin}{Dec 2023}
       {Bachelor of Science in Computer Science, Minor in Arabic}{GPA: 3.86/4.0}
       \resumeItemListStart
-        \resumeItem{\textbf{Relevant Coursework}: Distributed Computing, Operating Systems, Computer Graphics, Natural Language Processing, Machine Learning, Computer Networks, Algorithms, Compilers, Computer Architecture}
+        \resumeItem{\textbf{Relevant Coursework}: Distributed Computing, Operating Systems, Computer Graphics, Natural Language Processing, Machine Learning, Computer Networks, Algorithms, Compilers, Computer Architecture, Concurrency}
         \resumeItem{\textbf{Teaching Assistant}: Elements of Computers and Programming (2022), Elements of Software Design (2023)}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
@@ -141,9 +141,9 @@
       {Software Engineer Intern}{San Jose, CA}
       \resumeItemListStart
         \resumeItem{Created and deployed a real-time distributed ML pipeline to store and retrieve fine-tune layers for 15,000+ models}
-        \resumeItem{Developed a FastAPI webserver to execute training and inference jobs, achieved performance and resilience against connection outages via asynchrony and multithreading}
+        \resumeItem{Developed a fault-tolerant FastAPI webserver to asynchronously execute training and inference jobs}
         \resumeItem{Integrated PostgreSQL to store metadata about asynchronous jobs and fine-tune layers}
-        \resumeItem{Benchmarked multiple caching strategies for efficient storage and retrieval of fine-tune layers, including: Redis, Azure Blob Storage, native file system, and interprocess shared memory buffer}
+        \resumeItem{Cached storage and retrieval of fine-tune layers with Redis, increasing performance by 10x}
         \resumeItem{Containerized application using Docker and deployed scalably with Kubernetes}
       \resumeItemListEnd
 
@@ -173,11 +173,10 @@
 \section{Projects}
     \resumeSubHeadingListStart
       \resumeProjectHeading
-          {\textbf{Fluid Simulator} $|$ \emph{C++, OpenGL, Computer Graphics}}{}
+          {\textbf{FinSage} $|$ \emph{Python, React}}{}
           \resumeItemListStart
-            \resumeItem{Created interactive 2D fluid simulator for incompressible fluids}
-            \resumeItem{Implemented fast iterative solver of simplified Navier-Stokes equations}
-            \resumeItem{Visualized velocity fields by creating real-time vector field graph}
+            \resumeItem{Built FastAPI and React website to record financial transactions stored in MongoDB}
+            \resumeItem{Utilized GPT to give user recommendations on how to improve financial health}
           \resumeItemListEnd
       \resumeProjectHeading
           {\textbf{Distributed Key-Value Store with Load Balancing} $|$ \emph{Java, Distributed Systems}}{}
@@ -186,29 +185,21 @@
             \resumeItem{Load balanced key-value workloads using sharded paxos replica groups}
             \resumeItem{Verified correctness of algorithm with exhaustive model checking}
           \resumeItemListEnd
-      % \resumeProjectHeading
-      %     {\textbf{Multithreaded Ray Tracer} $|$ \emph{C++}}{}
-      %     \resumeItemListStart
-      %       \resumeItem{Implemented Whitted-style ray tracer in C++}
-      %       \resumeItem{Accelerated Ray tracer with K-d Trees and multithreading}
-      %     \resumeItemListEnd
       \resumeProjectHeading
-          {\textbf{Neural Network Transformer Encoder} $|$ \emph{Python, PyTorch}}{}
-          \resumeItemListStart
-            \resumeItem{Implemented transfomer encoder from scratch using PyTorch}
-            \resumeItem{Measured entropy of transformer by using perplexity}
-          \resumeItemListEnd
-
-      \resumeProjectHeading
-          {\textbf{Fine-tuned Natural Language Inference Model} $|$ \emph{Python, PyTorch}}{}
+          {\textbf{Fine-tuned Natural Language Inference Model} $|$ \emph{Machine Learning}}{}
           \resumeItemListStart
             \resumeItem{Fine-tuned pre-trained ELECTRA language model for natural language inference}
             \resumeItem{Used dataset cartography to optimize training examples and increase accuracy}
             \resumeItem{Created contrast sets to evaluate robustness of model}
           \resumeItemListEnd
-
+      \resumeProjectHeading
+          {\textbf{Fluid Simulator} $|$ \emph{C++, OpenGL, Computer Graphics}}{}
+          \resumeItemListStart
+            \resumeItem{Created interactive 2D fluid simulator for incompressible fluids in C++}
+            \resumeItem{Implemented fast iterative solver of simplified Navier-Stokes equations}
+            \resumeItem{Visualized velocity fields by creating real-time vector field graph with OpenGL}
+          \resumeItemListEnd
     \resumeSubHeadingListEnd
-
 
 %
 %-----------PROGRAMMING SKILLS-----------
